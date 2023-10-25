@@ -1,0 +1,96 @@
+/* Reset some default styles */
+html, body, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+label, select {
+  font-size: 14px;
+  color: #fff;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Add smooth transition */
+}
+
+.card:hover {
+  transform: scale(1.0);
+}
+
+.card.expanded {
+  width: 300px; /* Adjust width as desired */
+  height: 400px; /* Adjust height as desired */
+  /* Any other styles for expanded card */
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #666;
+}
+
+/* Media query for responsive design (adjust breakpoints as needed) */
+@media (max-width: 768px) {
+  .card-container {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+}

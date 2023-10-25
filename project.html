@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patch Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Patch Cards</h1>
+        <div class="filters">
+            <label for="filterYear">Filter by Year:</label>
+            <select id="filterYear">
+                <option value="all">All</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <!-- Add more options for other years -->
+            </select>
+            <label for="filterQuantity">Filter by Quantity:</label>
+            <select id="filterQuantity">
+                <option value="all">All</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <!-- Add more options for other quantities -->
+            </select>
+            <label for="filterIssuer">Filter by Issuer:</label>
+            <select id="filterIssuer">
+                <option value="all">All</option>
+                <option value="Ammatdiio 590A">Ammatdiio 590A</option>
+                <option value="Black Eagle 482A">Black Eagle 482A</option>
+                <!-- Add more options for other issuers -->
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <div id="card-container" class="card-container">
+            <!-- Cards will be dynamically added here by JavaScript -->
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
